@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QT.WebAPI", "QT.WebAPI\QT.WebAPI.csproj", "{779EF0EE-285D-46F6-9E4F-5A002A25C9B5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3B4CFE14-4DE6-4D1F-9AF6-1EDB09A4B5BD} = {3B4CFE14-4DE6-4D1F-9AF6-1EDB09A4B5BD}
+		{D1BB5B64-A6D0-4BCC-924C-0A6195CE2E63} = {D1BB5B64-A6D0-4BCC-924C-0A6195CE2E63}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{246F60AC-5C91-4111-B37D-F0F4C450A4B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{F0036D9A-A719-4DDB-9625-525E62DEDAC1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{9CC715E3-0886-433B-B47C-1B8A394AB572}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QT.Application", "QT.Application\QT.Application.csproj", "{3B4CFE14-4DE6-4D1F-9AF6-1EDB09A4B5BD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8FE890EB-6BF7-4E8B-AF83-DC53BBFBD38D} = {8FE890EB-6BF7-4E8B-AF83-DC53BBFBD38D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QT.Domain", "QT.Domain\QT.Domain.csproj", "{8FE890EB-6BF7-4E8B-AF83-DC53BBFBD38D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QT.Infrastructure", "QT.Infrastructure\QT.Infrastructure.csproj", "{D1BB5B64-A6D0-4BCC-924C-0A6195CE2E63}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8FE890EB-6BF7-4E8B-AF83-DC53BBFBD38D} = {8FE890EB-6BF7-4E8B-AF83-DC53BBFBD38D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{779EF0EE-285D-46F6-9E4F-5A002A25C9B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{779EF0EE-285D-46F6-9E4F-5A002A25C9B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{779EF0EE-285D-46F6-9E4F-5A002A25C9B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{779EF0EE-285D-46F6-9E4F-5A002A25C9B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B4CFE14-4DE6-4D1F-9AF6-1EDB09A4B5BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B4CFE14-4DE6-4D1F-9AF6-1EDB09A4B5BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B4CFE14-4DE6-4D1F-9AF6-1EDB09A4B5BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B4CFE14-4DE6-4D1F-9AF6-1EDB09A4B5BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FE890EB-6BF7-4E8B-AF83-DC53BBFBD38D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FE890EB-6BF7-4E8B-AF83-DC53BBFBD38D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FE890EB-6BF7-4E8B-AF83-DC53BBFBD38D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FE890EB-6BF7-4E8B-AF83-DC53BBFBD38D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1BB5B64-A6D0-4BCC-924C-0A6195CE2E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1BB5B64-A6D0-4BCC-924C-0A6195CE2E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1BB5B64-A6D0-4BCC-924C-0A6195CE2E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1BB5B64-A6D0-4BCC-924C-0A6195CE2E63}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3B4CFE14-4DE6-4D1F-9AF6-1EDB09A4B5BD} = {246F60AC-5C91-4111-B37D-F0F4C450A4B6}
+		{8FE890EB-6BF7-4E8B-AF83-DC53BBFBD38D} = {9CC715E3-0886-433B-B47C-1B8A394AB572}
+		{D1BB5B64-A6D0-4BCC-924C-0A6195CE2E63} = {F0036D9A-A719-4DDB-9625-525E62DEDAC1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A1CD0B8-B759-49FB-872E-5DBD34581ADD}
+	EndGlobalSection
+EndGlobal

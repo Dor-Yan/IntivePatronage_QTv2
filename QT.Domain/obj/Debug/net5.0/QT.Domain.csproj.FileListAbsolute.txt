@@ -1,0 +1,15 @@
+C:\Users\Dorian\source\repos\QT.WebAPI\QT.Domain\bin\Debug\net5.0\QT.Domain.deps.json
+C:\Users\Dorian\source\repos\QT.WebAPI\QT.Domain\bin\Debug\net5.0\QT.Domain.runtimeconfig.json
+C:\Users\Dorian\source\repos\QT.WebAPI\QT.Domain\bin\Debug\net5.0\QT.Domain.runtimeconfig.dev.json
+C:\Users\Dorian\source\repos\QT.WebAPI\QT.Domain\bin\Debug\net5.0\QT.Domain.dll
+C:\Users\Dorian\source\repos\QT.WebAPI\QT.Domain\bin\Debug\net5.0\ref\QT.Domain.dll
+C:\Users\Dorian\source\repos\QT.WebAPI\QT.Domain\bin\Debug\net5.0\QT.Domain.pdb
+C:\Users\Dorian\source\repos\QT.WebAPI\QT.Domain\obj\Debug\net5.0\QT.Domain.csproj.AssemblyReference.cache
+C:\Users\Dorian\source\repos\QT.WebAPI\QT.Domain\obj\Debug\net5.0\QT.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dorian\source\repos\QT.WebAPI\QT.Domain\obj\Debug\net5.0\QT.Domain.AssemblyInfoInputs.cache
+C:\Users\Dorian\source\repos\QT.WebAPI\QT.Domain\obj\Debug\net5.0\QT.Domain.AssemblyInfo.cs
+C:\Users\Dorian\source\repos\QT.WebAPI\QT.Domain\obj\Debug\net5.0\QT.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Dorian\source\repos\QT.WebAPI\QT.Domain\obj\Debug\net5.0\QT.Domain.dll
+C:\Users\Dorian\source\repos\QT.WebAPI\QT.Domain\obj\Debug\net5.0\ref\QT.Domain.dll
+C:\Users\Dorian\source\repos\QT.WebAPI\QT.Domain\obj\Debug\net5.0\QT.Domain.pdb
+C:\Users\Dorian\source\repos\QT.WebAPI\QT.Domain\obj\Debug\net5.0\QT.Domain.genruntimeconfig.cache

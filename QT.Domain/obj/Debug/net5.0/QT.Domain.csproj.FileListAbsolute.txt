@@ -12,3 +12,4 @@ C:\Users\Dorian\source\repos\QT.WebAPI\QT.Domain\obj\Debug\net5.0\QT.Domain.dll
 C:\Users\Dorian\source\repos\QT.WebAPI\QT.Domain\obj\Debug\net5.0\ref\QT.Domain.dll
 C:\Users\Dorian\source\repos\QT.WebAPI\QT.Domain\obj\Debug\net5.0\QT.Domain.pdb
 C:\Users\Dorian\source\repos\QT.WebAPI\QT.Domain\obj\Debug\net5.0\QT.Domain.genruntimeconfig.cache
+C:\Users\Dorian\source\repos\QT.WebAPI\QT.Domain\obj\Debug\net5.0\QT.Domain.csproj.AssemblyReference.cache

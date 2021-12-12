@@ -13,7 +13,7 @@ namespace QT.Domain.Interface
         User GetUserDetails(int userId);
 
         int AddUser(User user);
-        User GetUser(int userId);
+        User GetUser(int userId); 
         void UpdateUser(User user);
     }
 }

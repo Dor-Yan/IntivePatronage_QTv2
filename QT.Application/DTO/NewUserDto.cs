@@ -9,20 +9,19 @@ using System.Threading.Tasks;
 
 namespace QT.Application.DTO
 {
-    public class UserDetailsDto : IMapFrom<User>
+    public class NewUserDto : IMapFrom<User>
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime DateOfBirth { get; set; }
         public bool Gender { get; set; }
         public decimal? Weight { get; set; }
-        public AddressForListDto Address { get; set; }
+        public int AddressId { get; set; }
 
         public void Mapping(Profile profile)
         {
-            profile.CreateMap<User, UserDetailsDto>()
-                 .ForMember(s => s.Address, opt => opt.MapFrom(d => d.Address));
+            profile.CreateMap<NewUserDto, User>().ReverseMap();
         }
     }
 }

@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
+using QT.Domain.Model;
+using QT.Application.DTO;
 
 namespace QT.Application.Mapping
 {
@@ -13,7 +15,10 @@ namespace QT.Application.Mapping
         public MappingProfile()
         {
             ApplyMappingsFromAssembly(Assembly.GetExecutingAssembly());
+         
         }
+
+       
 
         private void ApplyMappingsFromAssembly(Assembly assembly)
         {
@@ -22,12 +27,15 @@ namespace QT.Application.Mapping
                 i.IsGenericType && i.GetGenericTypeDefinition() == typeof(IMapFrom<>)))
                 .ToList();
 
+
             foreach (var type in types)
             {
                 var instance = Activator.CreateInstance(type);
                 var methodInfo = type.GetMethod("Mapping");
                 methodInfo?.Invoke(instance, new object[] { this });
             }
+
+            
         }
     }
 }

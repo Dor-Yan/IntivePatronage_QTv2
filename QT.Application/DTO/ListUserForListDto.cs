@@ -9,5 +9,6 @@ namespace QT.Application.DTO
     public class ListUserForListDto
     {
         public List<UserForListDto> Users { get; set; }
+      
     }
 }

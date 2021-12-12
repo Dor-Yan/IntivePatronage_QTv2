@@ -5,12 +5,12 @@ using System.Collections.Generic;
 
 namespace QT.Domain.Model
 {
-    public partial class Address
+    public class Address
     {
-        public Address()
-        {
-            Users = new HashSet<User>();
-        }
+        //public Address()
+        //{
+        //    Users = new HashSet<User>();
+        //}
 
         public int Id { get; set; }
         public string Country { get; set; }

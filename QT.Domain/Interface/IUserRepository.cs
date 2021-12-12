@@ -11,5 +11,9 @@ namespace QT.Domain.Interface
     {
         IQueryable<User> GetAllUsers();
         User GetUserDetails(int userId);
+
+        int AddUser(User user);
+        User GetUser(int userId);
+        void UpdateUser(User user);
     }
 }

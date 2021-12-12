@@ -11,5 +11,9 @@ namespace QT.Application.Interfaces
     {
         ListUserForListDto GetAllUsersForList();
         UserDetailsDto GetUserDetails(int userId);
+        object GetUserForEdit(int id);
+        void UpdateUser(NewUserDto model);
+        int AddUser(NewUserDto reader);
+
     }
 }

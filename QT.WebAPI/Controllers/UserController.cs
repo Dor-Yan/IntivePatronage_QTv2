@@ -25,11 +25,12 @@ namespace QT.WebAPI.Controllers
         }
         // GET: api/<UserControler>
         [HttpGet]
-        public IQueryable<ListUserForListDto> GetAllUsers()
+        public IQueryable<UserForListDto> GetAllUsers()
         {
             var model = _userService.GetAllUsersForList();
-            return (IQueryable<ListUserForListDto>)model;
+            return model;
         }
+
 
         // GET api/<UserControler>/5
         [HttpGet("{id}")]
@@ -42,8 +43,10 @@ namespace QT.WebAPI.Controllers
 
         // POST api/<UserControler>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult AddUser(NewUserDto model)
         {
+            var id = _userService.AddUser(model);
+            return RedirectToAction("Index");
         }
 
         // PUT api/<UserControler>/5

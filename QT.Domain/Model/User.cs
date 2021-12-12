@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace QT.Domain.Model
 {
-    public partial class User
+    public class User
     {
         public int Id { get; set; }
         public string FirstName { get; set; }

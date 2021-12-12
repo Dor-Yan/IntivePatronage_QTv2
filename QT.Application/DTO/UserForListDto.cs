@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using QT.Application.Mapping;
+using QT.Domain.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace QT.Application.DTO
 {
-    public class UserForListDto : IMapFrom<QT.Domain.Model.User>
+    public class UserForListDto : IMapFrom<User>
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
@@ -16,7 +17,7 @@ namespace QT.Application.DTO
 
         public void Mapping(Profile profile)
         {
-            profile.CreateMap<QT.Domain.Model.User, UserForListDto>();
+            profile.CreateMap<User, UserForListDto>();
         }
     }
 }

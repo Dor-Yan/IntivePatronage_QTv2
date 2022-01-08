@@ -142,3 +142,4 @@ C:\Users\Dorian\source\repos\QT.WebAPI\QT.WebAPI\bin\Debug\net5.0\AutoMapper.Col
 C:\Users\Dorian\source\repos\QT.WebAPI\QT.WebAPI\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Dorian\source\repos\QT.WebAPI\QT.WebAPI\bin\Debug\net5.0\QT.Infrastructure.dll
 C:\Users\Dorian\source\repos\QT.WebAPI\QT.WebAPI\bin\Debug\net5.0\QT.Infrastructure.pdb
+C:\Users\Dorian\source\repos\QT.WebAPI\QT.WebAPI\bin\Debug\net5.0\libman.json

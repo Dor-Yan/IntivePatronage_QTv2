@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace QT.Infrastructure.Repositories
 {
     public class UserRepository : IUserRepository
@@ -30,6 +31,7 @@ namespace QT.Infrastructure.Repositories
 
         public int AddUser(User user)
         {
+
             _context.Users.Add(user);
             _context.SaveChanges();
             return user.Id;

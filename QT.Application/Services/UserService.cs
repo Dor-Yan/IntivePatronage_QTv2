@@ -32,21 +32,6 @@ namespace QT.Application.Services
 
             return userList;
 
-            //var users = _userRepo.GetAllUsers();
-            //ListUserForListDto result = new ListUserForListDto();
-            //result.Users = new List<UserForListDto>();
-            //foreach (var  user in users)
-            //{
-            //    var userDto = new UserForListDto()
-            //    {
-            //        id = user.Id,
-            //        FirstName = user.FirstName,
-            //        LastName = user.LastName
-            //    };
-
-            //    result.Users.Add(userDto);
-            //}
-            //return result;
         }
 
         public UserDetailsDto GetUserDetails(int userId)

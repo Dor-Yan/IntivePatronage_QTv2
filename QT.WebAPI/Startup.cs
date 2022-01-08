@@ -50,9 +50,9 @@ namespace QT.WebAPI
             services.AddApplication();
             services.AddInfrastructure();
 
-            //services.AddTransient<IUserService, UserService>();
-            //services.AddTransient<IUserRepository, UserRepository>();
-            //services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IUserRepository, UserRepository>();
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
             
         }

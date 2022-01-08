@@ -27,7 +27,7 @@ namespace QT.WebAPI.Controllers
 
         // GET: api/<UserControler>
         [HttpGet]
-        public IQueryable<ListUserForListDto> GetAllUsers()
+        public ActionResult< ListUserForListDto> GetAllUsers()
         {
             var model = _userService.GetAllUsersForList();
             return model;
@@ -35,29 +35,42 @@ namespace QT.WebAPI.Controllers
 
 
         // GET api/<UserControler>/5
-        [HttpGet("{id}")]
-        public UserDetailsDto GetUserDetails(int userId)
+        [HttpGet("userDetails/{userId}")]
+        public ActionResult< UserDetailsDto> GetUserDetails([FromRoute] int userId)
         {
             var userModel = _userService.GetUserDetails(userId);
 
+            if (userModel == null)
+            {
+                return NotFound();
+            }
             return userModel;
         }
 
-        [HttpPost("{id}")]
-        public IActionResult EditUser(int userId)
-        {
-            var user = _userService.GetUserForEdit(userId);
-            return user;
-        }
-            // POST api/<UserControler>
-            [HttpPost]
+        [HttpPost]
+        [Route("addUser")]
         public IActionResult AddUser(NewUserDto model)
         {
             var id = _userService.AddUser(model);
             return NoContent();
         }
 
+        [HttpGet]
+        [Route("userId")]
+        public UserDetailsDto EditUser(int id)
+        {
+            var reader = _userService.GetUserForEdit(id);
+            return (UserDetailsDto)reader;
+        }
 
+        [HttpPost("{userId}")]
+        public IActionResult EditUser(NewUserDto model)
+        {
+            _userService.UpdateUser(model);
+            return NoContent();
+        }
+
+        
 
         // PUT api/<UserControler>/5
         [HttpPut("{id}")]
